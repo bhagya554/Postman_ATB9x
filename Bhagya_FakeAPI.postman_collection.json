@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "c81d5e8d-5261-4ec4-9cb1-46ccf1524391",
+		"name": "Bhagya_FakeAPI",
+		"description": "[http://localhost:3000/posts](http://localhost:3000/posts)  \n[http://localhost:3000/comments](http://localhost:3000/comments)  \n[http://localhost:3000/profile](http://localhost:3000/profile)  \n[http://localhost:3000/booking](http://localhost:3000/booking)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29717334",
+		"_collection_link": "https://atb9x7.postman.co/workspace/ATB9x~a83a6a59-c881-4f17-92fc-50ef9cf8edce/collection/29717334-c81d5e8d-5261-4ec4-9cb1-46ccf1524391?action=share&source=collection_link&creator=29717334"
+	},
+	"item": [
+		{
+			"name": "Get All Bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Booking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"4\",\r\n        \"firstname\": \"Gowtham\",\r\n        \"lastname\": \"Mehra\",\r\n        \"depositpaid\": true,\r\n        \"total\": 567\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/booking",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Booking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n       \r\n        \"firstname\": \"Chaitu\",\r\n        \"lastname\": \"Swamy\",\r\n        \"depositpaid\": true,\r\n        \"total\": 567\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/booking/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Booking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"4\",\r\n        \"firstname\": \"Gowtham\",\r\n        \"lastname\": \"Mehra\",\r\n        \"depositpaid\": true,\r\n        \"total\": 567\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/booking/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"booking",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

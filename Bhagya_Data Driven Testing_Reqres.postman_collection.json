@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "b35011b3-8c89-4d60-9d21-b4d8fd8512e3",
+		"name": "Bhagya_Data Driven Testing_Reqres",
+		"description": "[https://mockaroo.com/schemas/702198](https://mockaroo.com/schemas/702198) - A website where we can generate sample test data\n\nDDT:Execute same testcases with multiple sets of data\n\n.csv and .json are the data file formats that are supported in postman.\n\n.xlsx is not supported",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29717334",
+		"_collection_link": "https://atb9x7.postman.co/workspace/ATB9x~a83a6a59-c881-4f17-92fc-50ef9cf8edce/collection/29717334-b35011b3-8c89-4d60-9d21-b4d8fd8512e3?action=share&source=collection_link&creator=29717334"
+	},
+	"item": [
+		{
+			"name": "DDT-Reqres Register POST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Check that the response status code is 201\r",
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.expect(pm.response.code).to.equal(201);\r",
+							"});\r",
+							"\r",
+							"// Validate response time is less than 1000ms\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
+							"});\r",
+							"\r",
+							"// Validate response content-type is application/json\r",
+							"pm.test(\"Content-Type is application/json\", function () {\r",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+							"});\r",
+							"\r",
+							"// Parse the response body\r",
+							"const response = pm.response.json();\r",
+							"// Validate the structure of the response\r",
+							"pm.test(\"Response structure is valid\", function () {\r",
+							"    pm.expect(response).to.have.all.keys('email', 'password', 'id', 'createdAt');\r",
+							"});\r",
+							"\r",
+							"// Validate email field\r",
+							"pm.test(\"Email field is correct\", function () {\r",
+							"    pm.expect(response.email).to.equal(pm.iterationData.get(\"email\"));\r",
+							"});\r",
+							"\r",
+							"// Validate password field\r",
+							"pm.test(\"Password field is correct\", function () {\r",
+							"    pm.expect(response.password).to.be.eql(pm.iterationData.get(\"password\"));\r",
+							"});\r",
+							"\r",
+							"// Validate id field is a string\r",
+							"pm.test(\"ID field is a string\", function () {\r",
+							"    pm.expect(response.id).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"// Validate createdAt field is a valid date string\r",
+							"pm.test(\"createdAt field is a valid date string\", function () {\r",
+							"    const dateRegex = /^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$/;\r",
+							"    pm.expect(response.createdAt).to.match(dateRegex);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "reqres-free-v1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"{{email}}\",\r\n    \"password\": \"{{password}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://reqres.in/api/register/preprod",
+					"protocol": "https",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"register",
+						"preprod"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

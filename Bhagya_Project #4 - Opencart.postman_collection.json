@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "8cfa6bcb-9b46-458d-9f8e-61307fc36645",
+		"name": "Bhagya_Project #4 - Opencart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29717334",
+		"_collection_link": "https://atb9x7.postman.co/workspace/ATB9x~a83a6a59-c881-4f17-92fc-50ef9cf8edce/collection/29717334-8cfa6bcb-9b46-458d-9f8e-61307fc36645?action=share&source=collection_link&creator=29717334"
+	},
+	"item": [
+		{
+			"name": "Register API OpenCart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "priority",
+						"value": "u=0, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://awesomeqa.com/ui/index.php?route=account/logout"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "OCSESSID=c5db5b815edc2e5aff8fa0f74e; language=en-gb; currency=USD"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://awesomeqa.com/ui/index.php?route=account/register",
+					"protocol": "https",
+					"host": [
+						"awesomeqa",
+						"com"
+					],
+					"path": [
+						"ui",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "route",
+							"value": "account/register"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://awesomeqa.com/ui/index.php?route=account/register' \\\r\n  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -b 'OCSESSID=c5db5b815edc2e5aff8fa0f74e; language=en-gb; currency=USD' \\\r\n  -H 'priority: u=0, i' \\\r\n  -H 'referer: https://awesomeqa.com/ui/index.php?route=account/logout' \\\r\n  -H 'sec-ch-ua: \"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: document' \\\r\n  -H 'sec-fetch-mode: navigate' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'sec-fetch-user: ?1' \\\r\n  -H 'upgrade-insecure-requests: 1' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "Login API OpenCart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cache-control",
+						"value": "max-age=0"
+					},
+					{
+						"key": "origin",
+						"value": "https://awesomeqa.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=0, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://awesomeqa.com/ui/index.php?route=account/login"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "OCSESSID=c5db5b815edc2e5aff8fa0f74e; language=en-gb; currency=USD"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "diryqew@mailinator.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Pa$$0rd!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://awesomeqa.com/ui/index.php?route=account/login",
+					"protocol": "https",
+					"host": [
+						"awesomeqa",
+						"com"
+					],
+					"path": [
+						"ui",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "route",
+							"value": "account/login"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'cache-control: max-age=0' \\\r\n  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary3StAlLS3bmhMud1j' \\\r\n  -b 'OCSESSID=c5db5b815edc2e5aff8fa0f74e; language=en-gb; currency=USD' \\\r\n  -H 'origin: https://awesomeqa.com' \\\r\n  -H 'priority: u=0, i' \\\r\n  -H 'referer: https://awesomeqa.com/ui/index.php?route=account/login' \\\r\n  -H 'sec-ch-ua: \"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: document' \\\r\n  -H 'sec-fetch-mode: navigate' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'sec-fetch-user: ?1' \\\r\n  -H 'upgrade-insecure-requests: 1' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \\\r\n  --data-raw $'------WebKitFormBoundary3StAlLS3bmhMud1j\\r\\nContent-Disposition: form-data; name=\"email\"\\r\\n\\r\\ndiryqew@mailinator.com\\r\\n------WebKitFormBoundary3StAlLS3bmhMud1j\\r\\nContent-Disposition: form-data; name=\"password\"\\r\\n\\r\\nPa$$w0rd\\u0021\\r\\n------WebKitFormBoundary3StAlLS3bmhMud1j--\\r\\n'"
+			},
+			"response": []
+		}
+	]
+}

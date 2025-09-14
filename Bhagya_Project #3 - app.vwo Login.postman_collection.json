@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "c9e4fa39-6bc3-4958-a965-9272cb91ed77",
+		"name": "Bhagya_Project #3 - app.vwo Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29717334",
+		"_collection_link": "https://atb9x7.postman.co/workspace/ATB9x~a83a6a59-c881-4f17-92fc-50ef9cf8edce/collection/29717334-c9e4fa39-6bc3-4958-a965-9272cb91ed77?action=share&source=collection_link&creator=29717334"
+	},
+	"item": [
+		{
+			"name": "Login API",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=UTF-8"
+					},
+					{
+						"key": "origin",
+						"value": "https://app.vwo.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://app.vwo.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "_vwo_ssm=1; _vwo_uuid=DA679CB5C818E9B7173CACE712D82A412; _vis_opt_exp_1874_combi=1; _vis_opt_s=1%7C; _vis_opt_test_cookie=1; _vis_opt_exp_1983_combi=2; _vis_opt_exp_1985_combi=2; _vis_opt_exp_1947_combi=2; _vis_opt_exp_360_combi=1; _vis_opt_exp_371_combi=2; _vis_opt_exp_222_combi=2; _vis_opt_exp_299_combi=2; _vis_opt_exp_303_combi=2; _vis_opt_exp_318_combi=2; lang=en; ajs_user_id=1277059; ajs_anonymous_id=a11e6b71-cf9e-436e-a303-6feaf125d1c4; _gat=1; _vwo_uuid_v2=D2FFF90670048C61BA552F75ABFAD18B3|8127be5482942ec9692566f49a82520c; _ga=GA1.2.1512922565.1756920400; _gid=GA1.2.1018311108.1756920400; _vwo_sn=398%3A4%3Ar2.visualwebsiteoptimizer.com%3A1%3A1%3Areferrer%3DaHR0cHM6Ly9hcHAudndvLmNvbS8%3D; _ga_LBVC51CNX9=GS2.2.s1756920398$o2$g1$t1756920417$j41$l0$h0; _vwo_ds=3%3At_1%2Ca_1%3A0%241756909536%3A55.71110889%3A867_0_1_0_6%2C869_0_1_0_9%2C1609_0_1_0_1%2C1625_0_1_0_1%2C1863_1_0_2%2C1873_1_0_2%2C1879_1_0_2%2C1881_1_0_2%2C1883_1_0_2%2C1885_1_0_2%2C1887_1_0_2%2C1890_1_0_2%2C1892_1_0_2%2C1894_1_0_2%2C1896_1_0_2%2C1898_1_0_2%2C1901_1_0_2%2C1906_1_0_3%2C1908_1_0_3%2C1910_1_0_3%2C1912_1_0_3%2C1914_1_0_3%2C1921_1_0_2%2C1923_1_0_2%2C1925_1_0_2%2C1927_1_0_2%2C1929_1_0_2%2C1931_1_0_2%2C1933_1_0_2%2C1935_1_0_2%2C1969_1_1_2%2C1975_1_1_2%2C1981_1_0_2%2C1755_1%2C1864_1%2C1869_1%2C1902_1%2C96_0_1_0_1%2C97_0_1_0_1%2C111_0_1_0_5%2C119_0_1_0_1%2C118_0_1_0_1%2C122_0_1_0_1%2C135_0_1_0_1%2C235_0_1_0_1%2C243_0_1_0_1%2C248_0_1_0_1%2C253_0_1_0_1%2C266_0_1_0_1%3A16_1%2C20_1%2C22_1%2C42_1%2C48_1%2C59_1%3A1965_1%2C1768_1%2C1608_1%2C1607_1%2C1354_1%2C1353_1%2C627_1%2C173_1%2C28_1%2C23_1%2C15_1%2C14_1%3A2; _gcl_au=1.1.1915364359.1756920401.1992409191.1756920429.1756920428"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"contact+atb7x@thetestingacademy.com\",\r\n    \"password\":\"Wingify@1234\",\r\n    \"remember\":false,\r\n    \"recaptcha_response_field\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app.vwo.com/login",
+					"protocol": "https",
+					"host": [
+						"app",
+						"vwo",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://app.vwo.com/login' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'content-type: application/json;charset=UTF-8' \\\r\n  -b '_vwo_ssm=1; _vwo_uuid=DA679CB5C818E9B7173CACE712D82A412; _vis_opt_exp_1874_combi=1; _vis_opt_s=1%7C; _vis_opt_test_cookie=1; _vis_opt_exp_1983_combi=2; _vis_opt_exp_1985_combi=2; _vis_opt_exp_1947_combi=2; _vis_opt_exp_360_combi=1; _vis_opt_exp_371_combi=2; _vis_opt_exp_222_combi=2; _vis_opt_exp_299_combi=2; _vis_opt_exp_303_combi=2; _vis_opt_exp_318_combi=2; lang=en; ajs_user_id=1277059; ajs_anonymous_id=a11e6b71-cf9e-436e-a303-6feaf125d1c4; _gat=1; _vwo_uuid_v2=D2FFF90670048C61BA552F75ABFAD18B3|8127be5482942ec9692566f49a82520c; _ga=GA1.2.1512922565.1756920400; _gid=GA1.2.1018311108.1756920400; _vwo_sn=398%3A4%3Ar2.visualwebsiteoptimizer.com%3A1%3A1%3Areferrer%3DaHR0cHM6Ly9hcHAudndvLmNvbS8%3D; _ga_LBVC51CNX9=GS2.2.s1756920398$o2$g1$t1756920417$j41$l0$h0; _vwo_ds=3%3At_1%2Ca_1%3A0%241756909536%3A55.71110889%3A867_0_1_0_6%2C869_0_1_0_9%2C1609_0_1_0_1%2C1625_0_1_0_1%2C1863_1_0_2%2C1873_1_0_2%2C1879_1_0_2%2C1881_1_0_2%2C1883_1_0_2%2C1885_1_0_2%2C1887_1_0_2%2C1890_1_0_2%2C1892_1_0_2%2C1894_1_0_2%2C1896_1_0_2%2C1898_1_0_2%2C1901_1_0_2%2C1906_1_0_3%2C1908_1_0_3%2C1910_1_0_3%2C1912_1_0_3%2C1914_1_0_3%2C1921_1_0_2%2C1923_1_0_2%2C1925_1_0_2%2C1927_1_0_2%2C1929_1_0_2%2C1931_1_0_2%2C1933_1_0_2%2C1935_1_0_2%2C1969_1_1_2%2C1975_1_1_2%2C1981_1_0_2%2C1755_1%2C1864_1%2C1869_1%2C1902_1%2C96_0_1_0_1%2C97_0_1_0_1%2C111_0_1_0_5%2C119_0_1_0_1%2C118_0_1_0_1%2C122_0_1_0_1%2C135_0_1_0_1%2C235_0_1_0_1%2C243_0_1_0_1%2C248_0_1_0_1%2C253_0_1_0_1%2C266_0_1_0_1%3A16_1%2C20_1%2C22_1%2C42_1%2C48_1%2C59_1%3A1965_1%2C1768_1%2C1608_1%2C1607_1%2C1354_1%2C1353_1%2C627_1%2C173_1%2C28_1%2C23_1%2C15_1%2C14_1%3A2; _gcl_au=1.1.1915364359.1756920401.1992409191.1756920429.1756920428' \\\r\n  -H 'origin: https://app.vwo.com' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://app.vwo.com/' \\\r\n  -H 'sec-ch-ua: \"Not;A=Brand\";v=\"99\", \"Google Chrome\";v=\"139\", \"Chromium\";v=\"139\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"username\":\"contact+atb7x@thetestingacademy.com\",\"password\":\"Wingify@1234\",\"remember\":false,\"recaptcha_response_field\":\"\"}'"
+			},
+			"response": []
+		}
+	]
+}
